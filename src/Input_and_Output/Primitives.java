@@ -1,3 +1,5 @@
+package Input_and_Output;
+
 public class Primitives {
     public static void main(String[] args) {
         int rollnum = 5678;
