@@ -7,5 +7,14 @@ public class Main {
 
         System.out.println(Cyril.salary);
 
+
+
+    }
+    static void fun() {
+        Main obj = new Main();
+        obj.greeting();
+    }
+    void greeting() {
+        System.out.println("how are you?");
     }
 }
