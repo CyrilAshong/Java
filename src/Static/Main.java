@@ -7,6 +7,7 @@ public class Main {
 
         System.out.println(Cyril.salary);
 
+        System.out.println(Humans.population);
 
 
     }
