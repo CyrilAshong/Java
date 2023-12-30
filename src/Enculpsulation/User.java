@@ -34,7 +34,7 @@ public class User {
     }
 
     public void setId(String id) {
-        Id = id;
+        this.Id = id;
     }
 
     public void setGender(String gender) {
