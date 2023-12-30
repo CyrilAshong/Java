@@ -6,6 +6,8 @@ public class Main {
         BoxWeight box2 = new BoxWeight();
         BoxPrice box3 = new BoxPrice();
 
+        box3.cost = 400.45;
+
         System.out.println(box3.cost);
     }
 }

@@ -13,4 +13,6 @@ public class BoxPrice extends BoxWeight {
         this.cost = cost;
     }
 
+
+
 }
