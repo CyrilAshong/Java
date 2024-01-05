@@ -1,17 +1,24 @@
 package Polymorphism;
 
 public class Vehicle {
-    private int acceleration;
-    private int currentSpeed;
+    protected int acceleration;
+    protected int currentSpeed;
 
-    public int accelerate() {
-       return this.currentSpeed += acceleration;
+    public Vehicle() {
+        this.acceleration = 20;
+        this.currentSpeed = 0;
+    }
+
+    public int accelerate(int acceleration) {
+        this.acceleration = acceleration;
+        return this.currentSpeed += this.acceleration;
     }
     public void decelerate() {
+        this.acceleration = acceleration;
         this.currentSpeed -= acceleration;
     }
-    public Vehicle() {
-        this.acceleration = 10;
+    public Vehicle(int acceleration) {
+        this.acceleration = acceleration;
         currentSpeed = 0;
     }
     public Vehicle(int acceleration, int currentSpeed) {
@@ -34,4 +41,10 @@ public class Vehicle {
     public void setCurrentSpeed(int currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
+
+    @Override
+    public String toString() {
+        return String.format( "{ Acceleration: %d, CurrentSpeed: %d }", acceleration, currentSpeed );
+    }
 }
+

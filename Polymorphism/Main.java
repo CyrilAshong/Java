@@ -3,11 +3,18 @@ package Polymorphism;
 public class Main {
     public static void main(String[] args) {
         Motors royal = new Motors();
+        Cars ferrari = new Cars();
+        Trucks toyota = new Trucks();
 
-        royal.setAcceleration(45);
-        royal.setCurrentSpeed(10);
+        royal.accelerate(10);
+        ferrari.accelerate(20);
+        toyota.accelerate(30);
 
-        System.out.println(royal.accelerate());
+        System.out.println(royal);
+        System.out.println(ferrari);
+        System.out.println(toyota);
+
+
 
     }
 }

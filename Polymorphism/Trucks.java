@@ -9,7 +9,14 @@ public class Trucks extends Vehicle{
     }
 
     public Trucks(int tires) {
+        super();
         this.tires = tires;
+    }
+
+    @Override
+    public int accelerate(int acceleration) {
+        this.acceleration = acceleration;
+        return this.currentSpeed += (this.acceleration + 15);
     }
 
     public Trucks(int acceleration, int currentSpeed, int tires) {

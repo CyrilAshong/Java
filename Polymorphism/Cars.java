@@ -7,6 +7,11 @@ public class Cars extends Vehicle {
         super();
         this.tires = 4;
     }
+    @Override
+    public int accelerate(int acceleration) {
+        this.acceleration = acceleration;
+        return this.currentSpeed = this.currentSpeed + (this.acceleration + 5);
+    }
     public Cars(int tires) {
         this.tires = tires;
     }
